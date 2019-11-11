@@ -6,8 +6,10 @@ Detailed step list to get the application up an running:
 3. Copy the application WAR file to the server's Webapps folder
 4. Start Apache Tomcat
 5. Go to {App End point}/portfolio/{twitterUserName} (For example: http://localhost:8080/zemoga/portfolio/GoT_Tyrion) - Validate Web Servers' Application context
-6. Rest API End Points:
-	- 
+6. Rest API End Points: (It is clarified that the names of the endpoints proposed in the statement were modified)
+ [GET] localhost:8080/zemoga/api/v1/users
+ [GET] localhost:8080/zemoga/api/v1/users/1
+ [PUT] localhost:8080/zemoga/api/v1/users/4
 
 Software prerequisites:
 -----------------------
