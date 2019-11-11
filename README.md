@@ -5,9 +5,11 @@ Detailed step list to get the application up an running:
 2. Update the configuration files (https://github.com/julianpicon/Portfolio_Web/tree/master/Apache%20Tomcat)
 3. Start Apache Tomcat
 3. Go to Web Server Admin Console http://localhost:8080/manager
+![Image description](./files/images/TomcatConsole.png)
 4. Upload the application WAR file into the Web Server (https://github.com/julianpicon/Portfolio_Web/tree/master/files)
 5. Go to {App End point}/portfolio/{twitterUserName} (For example: http://localhost:8080/zemoga/portfolio/GoT_Tyrion) - Validate Web Servers' Application context
-6. Rest API End Points: (It is clarified that the names of the endpoints proposed in the statement were modified)
+![Image description](./files/images/Deployment.png)
+6. Test Rest API End Points
 
 Rest API End Points:
 --------------------------------------------------------------------------------------------------------------
@@ -29,7 +31,5 @@ Steps to build the app:
 
 1. Use the IDE (IntelliJ) to generate the WAR or 
 1. Use the maven (clean / install) commands to generate the distributables (war).
-
-Total time: 14 
 
 ![Image description](./files/images/Parte1.png)
