@@ -24,4 +24,4 @@ Steps to build the app:
 
 Total time: 14 
 
-![Image description](https://github.com/julianpicon/Portfolio_Web/tree/master/files/images/Parte1.png)
+![Image description](./files/images/Parte1.png)
