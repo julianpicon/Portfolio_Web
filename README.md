@@ -3,8 +3,9 @@ Detailed step list to get the application up an running:
 
 1. Download Apache Tomcat (9.0.27) https://tomcat.apache.org/download-90.cgi
 2. Update the configuration files (https://github.com/julianpicon/Portfolio_Web/tree/master/Apache%20Tomcat)
-3. Copy the application WAR file to the server's Webapps folder (https://github.com/julianpicon/Portfolio_Web/tree/master/files)
-4. Start Apache Tomcat
+3. Start Apache Tomcat
+3. Go to Web Server Admin Console http://localhost:8080/manager
+4. Upload the application WAR file into the Web Server (https://github.com/julianpicon/Portfolio_Web/tree/master/files)
 5. Go to {App End point}/portfolio/{twitterUserName} (For example: http://localhost:8080/zemoga/portfolio/GoT_Tyrion) - Validate Web Servers' Application context
 6. Rest API End Points: (It is clarified that the names of the endpoints proposed in the statement were modified)
 
