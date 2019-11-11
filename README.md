@@ -18,3 +18,5 @@ Steps to build the app:
 
 1. Use the IDE (IntelliJ) to generate the WAR or 
 1. Use the maven (clean / install) commands to generate the distributables (war).
+
+Total time: 14 
