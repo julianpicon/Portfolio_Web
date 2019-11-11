@@ -19,6 +19,12 @@ Rest API End Points:
     [GET] localhost:8080/zemoga/api/v1/users/1
     [PUT] localhost:8080/zemoga/api/v1/users/4
 
+Get Users Info
+![Image description](./files/images/GetUsers.png)
+
+Get specific User Info
+![Image description](./files/images/GetUser.png)
+
 Software prerequisites:
 -----------------------
 
