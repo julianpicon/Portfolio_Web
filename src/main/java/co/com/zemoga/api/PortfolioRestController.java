@@ -51,7 +51,7 @@ public class PortfolioRestController {
         return ResponseEntity.ok(portfolioResource);
     }
 
-    @RequestMapping(value = "/users/{id}", method = RequestMethod.PUT, produces = "application/json") ///zemoga_portfolio_api/modify_user_info
+    @RequestMapping(value = "/users/{id}", method = RequestMethod.PUT, consumes = "application/json", produces = "application/json") ///zemoga_portfolio_api/modify_user_info
     public ResponseEntity<Object> updateUser(@RequestBody Portfolio portfolioFromRequest, @PathVariable int id) {
         Optional<Portfolio> studentOptional = Optional.ofNullable(portfolioService.findById(id));
         if (!studentOptional.isPresent())

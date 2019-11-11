@@ -5,6 +5,7 @@ Detailed step list to get the application up an running:
 2. Update the configuration files (https://github.com/julianpicon/Portfolio_Web/tree/master/Apache%20Tomcat)
 3. Copy the application WAR file to the server's Webapps folder
 4. Start Apache Tomcat
+5. Go to http://localhost:8080/zemoga/portfolio/{twitterUserName}
 
 Software prerequisites:
 -----------------------
