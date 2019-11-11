@@ -5,7 +5,9 @@ Detailed step list to get the application up an running:
 2. Update the configuration files (https://github.com/julianpicon/Portfolio_Web/tree/master/Apache%20Tomcat)
 3. Copy the application WAR file to the server's Webapps folder
 4. Start Apache Tomcat
-5. Go to http://localhost:8080/zemoga/portfolio/{twitterUserName}
+5. Go to {App End point}/portfolio/{twitterUserName} (For example: http://localhost:8080/zemoga/portfolio/GoT_Tyrion) - Validate Web Servers' Application context
+6. Rest API End Points:
+	- 
 
 Software prerequisites:
 -----------------------
@@ -21,3 +23,5 @@ Steps to build the app:
 1. Use the maven (clean / install) commands to generate the distributables (war).
 
 Total time: 14 
+
+![alt tag](https://github.com/julianpicon/Portfolio_Web/tree/master/files/images/Parte1.png)

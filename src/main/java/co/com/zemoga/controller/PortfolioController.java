@@ -2,9 +2,11 @@ package co.com.zemoga.controller;
 
 import co.com.zemoga.dto.UserPortfolioDTO;
 import co.com.zemoga.entity.Portfolio;
+import co.com.zemoga.exception.UserNotFoundException;
 import co.com.zemoga.service.PortfolioService;
 import co.com.zemoga.service.TwitterService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.social.twitter.api.Tweet;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class PortfolioController {
@@ -25,7 +28,8 @@ public class PortfolioController {
 
     @RequestMapping(value = "/portfolio/{userName}", method = RequestMethod.GET)
     public ModelAndView getPortfolio(@PathVariable String userName) {
-        Portfolio portfolio = portfolioService.getByUserName(userName);
+        Portfolio portfolio = Optional.ofNullable(this.portfolioService.getByUserName(userName))
+                .orElseThrow(() -> new UserNotFoundException(userName));
         List<Tweet> tweets = twitterService.getTweets(userName);
         return new ModelAndView("portfolio", "userPortfolio", new UserPortfolioDTO(portfolio, tweets));
     }
