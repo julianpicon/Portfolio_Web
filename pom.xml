@@ -17,7 +17,7 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
-    <spring.version>5.0.15.RELEASE</spring.version>
+    <spring.version>5.2.3.RELEASE</spring.version>
     <hibernate.version>5.3.5.Final</hibernate.version>
     <hibernate.validator>5.4.1.Final</hibernate.validator>
 
